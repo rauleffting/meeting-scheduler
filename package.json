@@ -11,16 +11,17 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
     "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0"
+    "@commitlint/config-conventional": "^17.7.0",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "husky": "^8.0.3"
   },
   "dependencies": {
     "@ignite-ui/react": "^2.2.4",
     "@types/node": "20.4.9",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
-    "eslint": "8.47.0",
+    "eslint": "^8.47.0",
     "eslint-config-next": "13.4.13",
     "next": "13.4.13",
     "react": "18.2.0",
