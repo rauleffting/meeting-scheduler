@@ -41,7 +41,7 @@ export function ClaimUsernameForm() {
         <TextInput
           size="sm"
           prefix="ignite.com/"
-          placeholder="seu-usuário"
+          placeholder="your-user"
           {...register('username')}
           readOnly
           onFocus={enableInput}
