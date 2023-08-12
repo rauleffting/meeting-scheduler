@@ -1,4 +1,4 @@
-import { styled, Heading, Text } from '@ignite-ui/react'
+import { styled, Heading, Text, Button } from '@ignite-ui/react'
 
 export const Container = styled('div', {
   maxWidth: 'calc(100vw - (100vw - 1160px) / 2)',
@@ -13,13 +13,24 @@ export const Hero = styled('div', {
   maxWidth: 480,
   padding: '0 $10',
 
-  [`${Heading}`]: {
+  [`> img`]: {
+    position: 'absolute',
+    top: 150,
+    left: 40,
+    zIndex: -1,
+    '@media(max-width: 600px)': {
+      top: 0,
+      left: 0,
+    },
+  },
+
+  [`> ${Heading}`]: {
     '@media(max-width: 600px)': {
       fontSize: '$6xl',
     },
   },
 
-  [`${Text}`]: {
+  [`> ${Text}`]: {
     maskType: '$2',
     color: '$gray200',
   },
@@ -28,6 +39,7 @@ export const Hero = styled('div', {
 export const Preview = styled('div', {
   paddingRight: '$8',
   overflow: 'hidden',
+  zIndex: 1,
 
   '@media(max-width: 600px)': {
     display: 'none',
