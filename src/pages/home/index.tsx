@@ -18,7 +18,7 @@ export default function Home() {
           alt="grid"
         />
         <Heading as="h1" size="4xl">
-          Meeting Scheduler
+          Schedule made easy
         </Heading>
         <Text size="xl">
           Connect your calendar and let people book appointments in their free
