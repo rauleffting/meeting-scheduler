@@ -85,7 +85,7 @@ export default function Register() {
           />
 
           {errors.username && (
-            <FormError size="sm">{errors.username.message}</FormError>
+            <FormError size="sm">{errors?.username.message}</FormError>
           )}
         </label>
 
@@ -94,7 +94,7 @@ export default function Register() {
           <TextInput placeholder="Your name" {...register('name')} />
 
           {errors.name && (
-            <FormError size="sm">{errors.name.message}</FormError>
+            <FormError size="sm">{errors?.name.message}</FormError>
           )}
         </label>
 
